@@ -24,7 +24,7 @@ g <- function(a,b) {
   return(gx)
 }
 g
-gx
+
 
 
 ```
@@ -36,7 +36,7 @@ h <- function(m, n) {
   return(hx)
 }
 h
-hx
+
 
 ```
 
@@ -55,7 +55,7 @@ f <- function(a, b) {
   return(fab)
 }
 f
-fab
+
 ```
 
 
@@ -76,7 +76,7 @@ h <- function(m,n){
   return(mn)
 }
 h
-mn
+
 ```
 ```{r}
 #2.3
@@ -97,7 +97,7 @@ g <- function(x) {
   return(gx)
 }
 g
-gx
+
 ```
 
 ```{r}
@@ -109,7 +109,7 @@ f <- function(x) {
   }
 
 f
-fx
+
 #grafiknya
 input <- 0:10
 plot(input,
@@ -125,7 +125,7 @@ f <- function(x) {
   return(fx)
 }
 f
-fx
+
 input <- 0:10
 plot(input,
 sapply(input, f), type = "l" , xlab = "x" , ylab = "plot log(x)" )
@@ -139,7 +139,7 @@ f <- function(x) {
   return(fx)
 }
 f
-fx
+
 input <- 0:10
 plot(input,
 sapply(input, f), type = "l" , xlab = "x" , ylab = "plot akar f(x)" )
@@ -153,7 +153,7 @@ f <- function(x) {
   return(fx)
 }
 f
-fx
+
 
 input <- 0:10
 plot(input,
@@ -168,7 +168,7 @@ f <- function(x) {
   return(fx)
 }
 f
-fx
+
 
 input <- 0:10
 plot(input,
@@ -184,7 +184,7 @@ y <- function(x){
   return(yx)
 }
 y
-yx
+
 ```
 
 ```{r}
@@ -195,7 +195,7 @@ y <- function(x){
   return(yx)
 }
 y
-yx
+
 
 ```
 
@@ -206,7 +206,7 @@ y <- function(x){
   return(yc)
 }
 y
-yc
+
 
 ```
 
@@ -217,7 +217,7 @@ y <- function(x){
   return(yd)
 }
 y
-yd
+
 ```
 
 
@@ -228,7 +228,7 @@ y <- function(x){
   return(ye)
 }
 y
-ye
+
 ```
 
 
@@ -240,7 +240,7 @@ y <- function(x){
   return(yf)
 }
 y
-yf
+
 ```
 
 
@@ -252,7 +252,7 @@ y <- function(x){
   return(yg)
 }
 y
-yg
+
 
 ```
 
@@ -265,7 +265,7 @@ y <- function(x){
   return(yh)
 }
 y
-yh
+
 
 ```
 
@@ -278,7 +278,7 @@ y <- function(x){
   return(yi)
 }
 y
-yi
+
 
 ```
 
@@ -291,7 +291,7 @@ y <- function(x){
   return(yj)
 }
 y
-yj
+
 ```
 
 
@@ -303,7 +303,7 @@ y <- function(x){
   return(yk)
 }
 y
-yk
+
 ```
 
 ```{r}
@@ -314,6 +314,6 @@ y <- function(x){
   return(yl)
 }
 y
-yl
+
 ```
 
