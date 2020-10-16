@@ -15,7 +15,6 @@ f <- function(x) {
   return(result)
 }
 f
-result
 ```
 
 ```{r}
