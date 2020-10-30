@@ -1,0 +1,100 @@
+---
+title: "P14 - Assignment"
+output: html_notebook
+---
+
+```{r}
+#No. 1
+#Set
+U <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
+B <- c(1,2,3,5,7,11,13,17,19)
+C <- c(2,4,6,8,10,12,14,16,18)
+A<- c(1,2,3,4,5,6,7,8,9,10)
+U
+B
+C
+A
+
+```
+```{r}
+aub <- union(A,B)
+buc <- union(B,C)
+abc <- union(aub,buc)
+aub
+buc
+abc
+```
+```{r}
+#No. 2a. f(x) = x3 + x2 − 6
+#Fungsi
+
+
+f <- function(x) {
+  hasil <- x^3 + x^2 - 6
+  return(hasil)
+}
+f
+
+```
+
+```{r}
+#Grafik 2a
+input <- -22:20
+plot(input,
+     sapply(input, f), type = "l", xlab = "x", ylab = "f(x)")
+```
+```{r}
+#2b => f(x) = −x2 − 6
+f <- function(x) {
+  fx <- -x^2 - 6
+  return(fx)
+}
+f
+```
+```{r}
+#Grafik 2b
+
+input <- 1:10
+plot(input, 
+     sapply(input, f), type = "l", xlab = "x", ylab = "Grafik f(x)")
+
+```
+```{r}
+#No. 3
+#Limit
+library(Ryacas)
+
+yac_expr("Limit(x,1) (x^4-x^2)/(x^3+x^2)*(sin(x)/x)+ cos(x)")
+yac_str("Limit(x,1) (x^4-x^2)/(x^3+x^2)*(sin(x)/x)+ cos(x)")
+```
+
+```{r}
+#No. 4
+#Differentation
+
+empat <- function(x) {
+  return(sin(x^2) / x^2 %*% (x+1))
+}
+library(Ryacas)
+yac_expr("D(x) x^2 ")
+```
+
+```{r}
+#No. 5 
+#Integration
+integrand <- function(x) {
+  return(x^2*cos(x^3+pi)*sin(x^3+pi))
+}
+```
+
+```{r}
+#Integration
+#evaluate the integrand and with the givent limits
+integrate(f = integrand, 0, 0)
+
+#using Ryacas to fins the expression
+library(Ryacas0)
+x <- Sym("x")
+Integrate(x^2*cos(x^3+pi)*sin(x^3+pi), x)
+```
+
